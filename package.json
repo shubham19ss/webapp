@@ -9,7 +9,9 @@
     "Santiago Arriaga <santiago.arriaga9@gmail.com>"
   ],
   "scripts": {
-    "start": "react-scripts start",
+    "build": "webpack",
+    "postinstall": "npm run build",
+    "start": "node bin"
     "build": "react-scripts build",
     "run-integration-tests": "cypress run",
     "test": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 run-integration-tests",
