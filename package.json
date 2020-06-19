@@ -8,8 +8,9 @@
     "David Maillo",
     "Santiago Arriaga <santiago.arriaga9@gmail.com>"
   ],
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "run-integration-tests": "cypress run",
     "test": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 run-integration-tests",
